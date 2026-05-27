@@ -40,12 +40,9 @@ DEFAULT_FILES = [
 
 @st.cache_data
 def load_data():
-    for file_path in DEFAULT_FILES:
-        if Path(file_path).exists():
-            df = pd.read_csv(file_path)
-            df.columns = [c.strip() for c in df.columns]
-            return df
-    return None
+    df = pd.read_csv("data/Housing.csv")
+    df.columns = [c.strip() for c in df.columns]
+    return df
 
 
 @st.cache_resource
