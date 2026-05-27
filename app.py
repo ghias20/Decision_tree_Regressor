@@ -29,6 +29,7 @@ CATEGORICAL_FEATURES = [
 ALL_FEATURES = NUMERIC_FEATURES + CATEGORICAL_FEATURES
 
 DEFAULT_FILES = [
+    "Housing.csv",
     "housing.csv",
     "house_price.csv",
     "data/house_price.csv",
